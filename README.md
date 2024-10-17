@@ -1,6 +1,10 @@
-DCT123C2
-Nhóm 9999
-Chủ đề: Web bán quần áo
+DCT123C2.
+
+Nhóm 9999.
+
+
+Chủ đề: Web bán quần áo.
+
 Thành viên:
 1. Lê Phúc Thịnh - 3123411284
 2. Trương Minh Thuận - 3123411291
