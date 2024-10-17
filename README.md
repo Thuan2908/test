@@ -1,6 +1,6 @@
 DCT123C2.
 
-Nhóm 9999.
+Nhóm 9999
 
 
 Chủ đề: Web bán quần áo.
