@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chi Tiết Đơn Hàng</title>
+    <link rel="stylesheet" href="donhang1.css">
+</head>
+
+<body>
+    <div class="order-container">
+        <header class="order-header">
+            <h1>Chi Tiết Đơn Hàng</h1>
+            <p class="order-id">Mã đơn hàng: <span id="order-id">#123456789</span></p>
+            <p class="order-date">Ngày đặt hàng: <span id="order-date">12/11/2024</span></p>
+        </header>
+
+        <!-- Thông tin khách hàng -->
+        <section class="customer-info">
+            <h2>Thông Tin Khách Hàng</h2>
+            <table>
+                <tr>
+                    <td>Tên Khách Hàng:</td>
+                    <td><span id="customer-name">Nguyễn Văn A</span></td>
+                </tr>
+                <tr>
+                    <td>Địa Chỉ:</td>
+                    <td><span id="customer-address">123 Đường ABC, Quận 1, TP.HCM</span></td>
+                </tr>
+                <tr>
+                    <td>Số Điện Thoại:</td>
+                    <td><span id="customer-phone">0987654321</span></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><span id="customer-email">nguyen.a@example.com</span></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Chi tiết sản phẩm -->
+        <section class="order-items">
+            <h2>Sản Phẩm Đặt Mua</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã kiểu</th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Số Lượng</th>
+                        <th>Đơn Giá</th>
+                        <th>Thành Tiền</th>
+                    </tr>
+                </thead>
+                <tbody id="order-items-list">
+                    <tr class="product-item">
+                        <td>FA5212-011</td>
+                        <td>Áo Sơ mi dài tay Café-DriS</td>
+                        <td>2</td>
+                        <td>499.000₫</td>
+                        <td>998.000₫</td>
+                    </tr>
+                    <tr class="product-item">
+                        <td>FA5212-011</td>
+                        <td>Áo Sơ mi dài tay Café-DriS</td>
+                        <td>1</td>
+                        <td>499.000₫</td>
+                        <td>499.000₫</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tóm tắt đơn hàng -->
+        <section class="order-summary">
+            <h2>Tóm Tắt Đơn Hàng</h2>
+            <table>
+                <tr>
+                    <td style="width: 301.61px;">Tổng Tiền Sản Phẩm:</td>
+                    <td><span id="total-product">1.497.000₫</span></td>
+                </tr>
+                <tr>
+                    <td>Phí Vận Chuyển:</td>
+                    <td><span id="shipping-fee">20.000₫</span></td>
+                </tr>
+                <tr>
+                    <td >Giảm Giá:</td>
+                    <td><span id="discount">-149.000₫</span></td>
+                </tr>
+                <tr class="total-row">
+                    <td style="color: #27ae60; font-size: 18px; font-weight: bold;">Tổng Tiền Thanh Toán:</td>
+                    <td style="color: #27ae60; font-size: 18px; font-weight: bold;"><span id="total-payment">1.368.000₫</span></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Thông tin giao hàng -->
+        <section class="shipping-info">
+            <h2 style="color: #34495e; font-size: 20px;padding-bottom: 8px; margin-bottom: 10px; margin-top: 20px; border-bottom: 2px solid #e5e5e5;">Thông Tin Giao Hàng</h2>
+            <table>
+                <tr>
+                    <td style="width: 301.61px; padding: 10px;">Phương Thức Vận Chuyển:</td>
+                    <td><span id="shipping-method">Giao hàng tiêu chuẩn</span></td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Thời Gian Dự Kiến:</td>
+                    <td><span id="delivery-time">15/11/2024</span></td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Trạng Thái Đơn Hàng:</td>
+                    <td><span id="order-status">Đang vận chuyển</span></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Footer -->
+        <!-- <footer class="order-footer">
+            <p>Cảm ơn bạn đã mua sắm tại cửa hàng của chúng tôi!</p>
+        </footer> -->
+    </div>
+
+    <!-- Thêm hiệu ứng cho các phần tử -->
+    <script>
+        window.onload = function () {
+            const products = document.querySelectorAll('.product-item');
+            products.forEach((product, index) => {
+                setTimeout(() => {
+                    product.classList.add('fade-in');
+                }, index * 300);
+            });
+
+            const totalPayment = document.getElementById('total-payment');
+            totalPayment.classList.add('highlight');
+        }
+    </script>
+</body>
+
+</html>
