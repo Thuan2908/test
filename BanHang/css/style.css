@@ -283,6 +283,34 @@ ol {
 	color: #000000;
 }
 
+.search-model-form {
+    display: flex; /* Sử dụng Flexbox để căn ngang */
+    align-items: center; /* Căn giữa theo trục dọc */
+    padding: 0 50px;
+}
+
+.search-model-form input {
+    width: 400px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #090909;
+    background: 0 0;
+    color: #000000;
+    margin-right: 10px; /* Tạo khoảng cách giữa ô nhập và nút */
+}
+
+.search-btn {
+    display: inline-block;
+    font-size: 20px; /* Kích thước biểu tượng */
+    margin-left: -20px; /* Khoảng cách giữa ô tìm kiếm và biểu tượng */
+    cursor: pointer; /* Hiển thị con trỏ khi hover */
+    color: #090909; /* Màu biểu tượng */
+}
+
+.search-btn:hover {
+    color: #555; /* Thay đổi màu khi hover */
+}
+
 .search-close-switch {
 	position: absolute;
 	width: 10px;
@@ -2072,10 +2100,13 @@ ol {
 .shop-cart {
 	padding-top: 70px;
 	padding-bottom: 90px;
+	
 }
 
 .shop__cart__table {
 	margin-bottom: 30px;
+	text-align: center; /* Căn giữa theo chiều ngang */
+
 }
 
 .shop__cart__table table {
@@ -2099,12 +2130,13 @@ ol {
 }
 
 .shop__cart__table tbody tr td {
-	padding: 30px 0;
+	padding: 10px 0;
+	
 }
 
 .shop__cart__table tbody tr .cart__product__item {
 	overflow: hidden;
-	width: 585px;
+	/* width: 585px; */
 }
 
 .shop__cart__table tbody tr .cart__product__item img {
@@ -2130,7 +2162,7 @@ ol {
 
 .shop__cart__table tbody tr .cart__price {
 	font-size: 16px;
-	color: #ca1515;
+	color: #000000;
 	font-weight: 600;
 	width: 190px;
 }
@@ -2157,14 +2189,14 @@ ol {
 
 .shop__cart__table tbody tr .cart__total {
 	font-size: 16px;
-	color: #ca1515;
+	color: #000000;
 	font-weight: 600;
 	width: 150px;
 }
 
-.shop__cart__table tbody tr .cart__close {
-	text-align: right;
-}
+/* .shop__cart__table tbody tr .cart__close {
+	text-align: cen;
+} */
 
 .shop__cart__table tbody tr .cart__close span {
 	height: 45px;
@@ -2431,7 +2463,8 @@ ol {
 
 .checkout__order {
 	background: #f5f5f5;
-	padding: 30px;
+	padding: 20px;
+	border-radius: 10px;
 }
 
 .checkout__order h5 {

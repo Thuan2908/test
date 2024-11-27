@@ -55,7 +55,7 @@
                         <div class="header__right__auth">
                             <a href="#" class="auth-name" onclick="toggleDropdown(event)">LÊ VĂN A</a>
                             <div class="dropdown" id="userDropdown">
-                                <a href="lichsu.html">Lịch sử mua hàng</a>
+                                <a href="lichsumuahang.html">Lịch sử mua hàng</a>
                             </div>
                         </div>
                       
@@ -64,12 +64,12 @@
 
                         <ul class="header__right__widget">
                             <li><span class="icon_search search-switch"></span></li>
-                            
+                              
                             <!-- <li><a href="#"><span class="icon_heart_alt"></span>
                                 <div class="tip">2</div>
                             </a></li> -->
-                            <li><a href="/dangnhap.html"><span class="icon_bag_alt"></span>
-                                <div class="tip">1</div>
+                            <li><a href="./giohang.html"><span class="icon_bag_alt"></span>
+                                <div class="tip">3</div>
                             </a></li>
                             <div class="header__right__auth">
                            
@@ -306,34 +306,34 @@
                         </div>
                         <div class="sidebar__sizes">
                             <div class="section-title">
-                                <h4>Chọn Size</h4>
+                                <h4>Theo danh mục</h4>
                             </div>
                             <div class="size__list">
                                 <label for="xxs">
-                                    S
+                                    Áo sơ mi
                                     <input type="checkbox" id="xxs">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label for="xs">
-                                    M
+                                    Quần Tây
                                     <input type="checkbox" id="xs">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label for="xss">
-                                    L
+                                    Áo thun
                                     <input type="checkbox" id="xss">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label for="s">
-                                    XL
+                                    Tất cả
                                     <input type="checkbox" id="s">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label for="m">
+                                <!-- <label for="m">
                                     XXL
                                     <input type="checkbox" id="m">
                                     <span class="checkmark"></span>
-                                </label>
+                                </label> -->
                                 <!-- <label for="ml">
                                     m-l
                                     <input type="checkbox" id="ml">
@@ -725,6 +725,7 @@
             <div class="search-close-switch" onclick="closeSearch()">+</div>
             <form class="search-model-form" onsubmit="return searchRedirect(event)">
                 <input type="text" id="search-input" placeholder="Tìm kiếm" onkeydown="handleKeyDown(event)">
+                <a href="./ketquatimkiem.html"> <span class="icon_search search-switch search-btn" onclick="document.querySelector('.search-model-form').submit();"></span></a>
             </form>
         </div>
     </div>

@@ -55,7 +55,7 @@
                         <div class="header__right__auth">
                             <a href="#" class="auth-name" onclick="toggleDropdown(event)">LÊ VĂN A</a>
                             <div class="dropdown" id="userDropdown">
-                                <a href="lichsu.html">Lịch sử mua hàng</a>
+                                <a href="lichsumuahang.html">Lịch sử mua hàng</a>
                             </div>
                         </div>
                         
@@ -67,8 +67,8 @@
                             <!-- <li><a href="#"><span class="icon_heart_alt"></span>
                                 <div class="tip">2</div>
                             </a></li> -->
-                            <li><a href="/dangnhap.html"><span class="icon_bag_alt"></span>
-                                <div class="tip">1</div>
+                            <li><a href="./giohang.html"><span class="icon_bag_alt"></span>
+                                <div class="tip">3</div>
                             </a></li>
                             <div class="header__right__auth">
                            
@@ -155,8 +155,7 @@
                         </div>
                         <div class="product__details__price">499.000₫ <span> 599.000₫</span></div>
                         <p>
-                            Áo sơ mi dài tay Café-DriS là sản phẩm mới ra mắt nhưng đã nhanh chóng gây ấn tượng và thu hút sự chú ý của nhiều quý ông.
-                             Với thiết kế hiện đại, chất liệu Café-DriS không chỉ tạo cảm giác thoải mái mà còn mang đến khả năng thấm hút mồ hôi tốt,
+                            Áo sơ mi dài tay Café-DriS là sản phẩm với thiết kế hiện đại, chất liệu Café-DriS không chỉ tạo cảm giác thoải mái mà còn mang đến khả năng thấm hút mồ hôi tốt,
                               giúp người mặc luôn cảm thấy dễ chịu  </p>
                         <div class="product__details__button">
                             <div class="quantity">
@@ -168,6 +167,7 @@
                                 </div>
                             </div>
                             <!-- <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Thêm vào giỏ hàng</a> -->
+                            <div>
                             <a href="#" class="cart-btn" onclick="addToCart()"> <span class="icon_bag_alt"></span> Thêm vào giỏ hàng </a>
 
                             <div id="notification" style="display: none; padding: 10px; background-color: #4CAF50; color: white; position: fixed; top: 93px; left: 50%; transform: translateX(-50%); border-radius: 5px; z-index: 1000;">
@@ -184,6 +184,7 @@
                                 }, 2000);
                             }
                             </script>
+                            </div>
                             <ul>
                                 <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                                 <li><a href="#"><span class="icon_adjust-horiz"></span></a></li>
@@ -191,18 +192,26 @@
                         </div>
                         <div class="product__details__widget">
                             <ul>
-                                <li>
+                                <!-- <li>
                                     <span>Hàng:</span>
                                     <div class="stock__checkbox">
                                         <label for="stockin">
                                             Còn hàng
                                             <input type="checkbox" id="stockin">
+                                             <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </li> -->
+                                <li>
+                                    <span>Màu sắc hiển thị:</span>
+                                    <div class="stock__checkbox">
+                                        <label for="stockin">
+                                            Xanh
+                                            <input type="checkbox" id="stockin">
                                             <!-- <span class="checkmark"></span> -->
                                         </label>
                                     </div>
-                                </li>
-                                <li>
-                                    <span>Màu:</span>
+                                    <!-- <span>Màu:</span>
                                     <div class="color__checkbox">
                                         <label for="black">
                                             <input type="radio" name="color__radio" id="black">
@@ -216,8 +225,18 @@
                                             <input type="radio" name="color__radio" id="blue">
                                             <span class="checkmark blue-bg"></span>
                                         </label>
-                                    </div>
+                                    </div> -->
                                 </li>
+                                <!-- <li>
+                                    <span>xuất xứ:</span>
+                                    <div class="stock__checkbox">
+                                        <label for="stockin">
+                                            Indonesia
+                                            <input type="checkbox" id="stockin">
+                                             <span class="checkmark"></span> 
+                                        </label>
+                                    </div>
+                                </li> -->
                                 <li>
                                     <span>Kích cỡ:</span>
                                     <div class="size__btn">
@@ -239,30 +258,30 @@
                                         </label>
                                     </div>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <span>Dịch vụ giao hàng:</span>
                                     <p>Miễn phí</p>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="product__details__tab">
-                        <ul class="nav nav-tabs" role="tablist">
+                        <!-- <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Chi tiết sản phẩm</a>
                             </li>
-                            <!-- <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Thông tin chi tiết</a>
-                            </li> -->
-                        </ul>
-                        <div class="tab-content">
+                            </li>
+                        </ul> -->
+                        <!-- <div class="tab-content">
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                <p>Màu sắc hiển thị: Đen/Trắng/Xanh</p>
+                                <p>Màu sắc hiển thị: Xanh</p>
                                 <p>Mã kiểu: FA5212-011</p>
                                 <p>Xuất xứ: Indonesia</p>
-                            </div>
+                            </div> -->
                             <!-- <div class="tab-pane" id="tabs-2" role="tabpanel">
                                 <h6>Dễ dàng xỏ vào</h6>
                                 <p>Hệ thống điều chỉnh sử dụng cơ chế kéo và thả đơn giản, cho phép bạn thắt chặt giày nhanh chóng chỉ với một tay.</p>
@@ -462,6 +481,7 @@
         <div class="search-close-switch" onclick="closeSearch()">+</div>
         <form class="search-model-form" onsubmit="return searchRedirect(event)">
             <input type="text" id="search-input" placeholder="Tìm kiếm" onkeydown="handleKeyDown(event)">
+            <a href="./ketquatimkiem.html"> <span class="icon_search search-switch search-btn" onclick="document.querySelector('.search-model-form').submit();"></span></a>
         </form>
     </div>
 </div>

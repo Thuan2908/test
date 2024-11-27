@@ -24,14 +24,23 @@
         <div class="logo">
             <img src="./logo.jpg" alt="Logo">
             <!--gan link-->
-            <a href="#"><i class="fa fa-fw fa-user"></i>Nguyễn Văn B</a>
+            <a href="#" style="text-decoration: none; color: #000;"><i class="fa fa-fw fa-user"></i>Nguyễn Văn B</a>
         </div>
         <nav>
             <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Tổng quan</a></li>
                 <li><a href="./QLsanpham.html"><i class="fa-solid fa-shirt"></i> Sản phẩm</a></li>
                 <li><a href="./QLkhachhang.html"><i class="fas fa-users"></i> Khách hàng</a></li>
                 <li><a href="./QLdonhang.html"><i class="fas fa-shopping-cart"></i> Đơn hàng</a></li>
-                <li><a href="./QLthongke.html"><i class="fas fa-chart-line"></i> Thống kê</a></li>
+                <li class="statistics">
+                    <a>
+                        <i class="fa fa-chart-line"></i> Thống kê <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="QLthongkesanpham.html">Lượng sản phẩm</a></li>
+                        <li><a href="QLthongkekhachhang.html">Khách hàng</a></li>
+                    </ul>
+                </li>
                 <div class="sidebar-group">
                     <!-- <li class="sidebar-02"><a href=""><i class="fas fa-arrow-alt-circle-left"></i> Trang
                             chủ</a></li> -->
@@ -66,7 +75,7 @@
                     <option value="cancelled">Đã hủy</option>
                 </select>
 
-                <label for="district">Địa chỉ giao hàng (Quận):</label>
+                <label for="district">Địa chỉ giao hàng:</label>
                 <input type="text" id="district" name="district" placeholder="Nhập tên quận...">
 
                 <button type="submit"><i class="fas fa-filter"></i> Lọc</button>
@@ -79,7 +88,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <!-- <th>ID</th> -->
                         <th>Khách hàng</th>
                         <th>Ngày đặt</th>
                         <th>Trạng thái</th>
@@ -89,18 +98,20 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>001</td>
+                        <!-- <td>001</td> -->
                         <td>Nguyễn Văn A</td>
                         <td>12/10/2024</td>
                         <td>
                             <select name="status" class="order-status" data-order-id="001">
                                 <option value="pending">Chưa xử lý</option>
-                                <option value="confirmed"  selected>Đã xác nhận</option>
+                                <option value="confirmed" selected>Đã xác nhận</option>
                                 <option value="delivered">Đã giao</option>
                                 <option value="cancelled">Đã hủy</option>
                             </select>
+                            <button name="button" value="OK" type="button" onclick="alert('Lưu thành công')">Lưu</button>
+                            
                         </td>
-                        <td>Quận 1</td>
+                        <td>123 Đường ABC, Quận 1, TP.HCM</td>
                         <td>
                             <!--LINK DETAIL-->
                             <a href="./donhang1.html" class="view-btn"><i class="fas fa-eye"></i> Xem chi
@@ -108,18 +119,59 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>002</td>
+                        <!-- <td>002</td> -->
                         <td>Trần Thị B</td>
                         <td>14/11/2024</td>
                         <td>
                             <select name="status" class="order-status" data-order-id="002">
                                 <option value="pending" selected>Chưa xử lý</option>
-                                <option value="confirmed" >Đã xác nhận</option>
+                                <option value="confirmed">Đã xác nhận</option>
                                 <option value="delivered">Đã giao</option>
                                 <option value="cancelled">Đã hủy</option>
                             </select>
+                            <button name="button" value="OK" type="button" onclick="alert('Lưu thành công')">Lưu</button>
                         </td>
-                        <td>Quận 3</td>
+                        <td>111 Đường N, Quận 3, TP.HCM</td>
+                        <td>
+                            <!--LINK DETAIL-->
+                            <a href="./donhang1.html" class="view-btn"><i class="fas fa-eye"></i> Xem chi
+                                tiết</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- <td>002</td> -->
+                        <td>Trần Thị B</td>
+                        <td>14/11/2024</td>
+                        <td>
+                            <select name="status" class="order-status" data-order-id="002">
+                                <option value="pending" selected>Chưa xử lý</option>
+                                <option value="confirmed">Đã xác nhận</option>
+                                <option value="delivered">Đã giao</option>
+                                <option value="cancelled">Đã hủy</option>
+                            </select>
+                            <button name="button" value="OK" type="button" onclick="alert('Lưu thành công')">Lưu</button>
+                        </td>
+                        <td>111 Đường N, Quận 3, TP.HCM</td>
+                        <td>
+                            <!--LINK DETAIL-->
+                            <a href="./donhang1.html" class="view-btn"><i class="fas fa-eye"></i> Xem chi
+                                tiết</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- <td>002</td> -->
+                        <td>Trần Thị B</td>
+                        <td>14/11/2024</td>
+                        <td>
+                            <select name="status" class="order-status" data-order-id="002">
+                                <option value="pending" selected>Chưa xử lý</option>
+                                <option value="confirmed">Đã xác nhận</option>
+                                <option value="delivered">Đã giao</option>
+                                <option value="cancelled">Đã hủy</option>
+                            </select>
+                            <button name="button" value="OK" type="button" onclick="alert('Lưu thành công')">Lưu</button>
+                        </td>
+                        <td>111 Đường N, Quận 3, TP.HCM</td>
                         <td>
                             <!--LINK DETAIL-->
                             <a href="./donhang1.html" class="view-btn"><i class="fas fa-eye"></i> Xem chi
@@ -128,8 +180,8 @@
                     </tr>
                     <!-- Thêm các dòng đơn hàng khác -->
 
-    
-             
+
+
                 </tbody>
 
 

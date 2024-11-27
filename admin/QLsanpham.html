@@ -23,14 +23,23 @@
     <aside class="sidebar">
         <div class="logo">
             <img src="./logo.jpg" alt="Logo">
-            <a href="#"><i class="fa fa-fw fa-user"></i>Nguyễn Văn B</a>
+            <a href="#" style="text-decoration: none; color: #000;"><i class="fa fa-fw fa-user"></i>Nguyễn Văn B</a>
         </div>
         <nav>
             <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Tổng quan</a></li>
                 <li><a href="QLsanpham.html"><i class="fas fa-shirt"></i> Sản phẩm</a></li>
                 <li><a href="QLkhachhang.html"><i class="fas fa-users"></i> Khách hàng</a></li>
                 <li><a href="QLdonhang.html"><i class="fas fa-shopping-cart"></i> Đơn hàng</a></li>
-                <li><a href="QLthongke.html"><i class="fas fa-chart-line"></i> Thống kê</a></li>
+                <li class="statistics">
+                    <a>
+                        <i class="fa fa-chart-line"></i> Thống kê <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="QLthongkesanpham.html">Lượng sản phẩm</a></li>
+                        <li><a href="QLthongkekhachhang.html">Khách hàng</a></li>
+                    </ul>
+                </li>
                 <div class="sidebar-group">
                     <!-- <li class="sidebar-02"><a href=""><i class="fas fa-arrow-alt-circle-left"></i> Trang
                             chủ</a></li> -->
@@ -50,7 +59,10 @@
         <div class="search-bar">
             <h2 class="search-bar-title">Tìm kiếm sản phẩm</h2>
             <input type="text" id="search" placeholder="Tìm kiếm sản phẩm...">
-           <a href="#"> <button><i class="fas fa-search"></i></button></a>
+            <a href="#"> <button><i class="fas fa-search"></i></button></a>
+            <a href="themsanpham.html"><button name="button" value="OK" type="button">
+                Thêm sản phẩm
+            </button></a>
         </div>
         <!-- Danh sách Sản Phẩm -->
         <div class="product-list">
@@ -59,8 +71,12 @@
                 <thead>
                     <tr>
                         <th>Tên SP</th>
-                        <th>Giá SP(VND)</th>
-                        <th>Danh mục</th>
+                        <th>Giá cũ</th>
+                        <th> Giá mới</th>
+
+                        <th>Màu sắc</th>
+                        
+                       
                         <th>Kích cỡ</th>
                         <th>Ảnh</th>
                         <th>Hành động</th>
@@ -70,38 +86,64 @@
                     <!-- San pham 1  -->
                     <tr>
                         <td>Áo Sơ mi dài tay Café-DriS</td>
+                        <td>599.000₫</td>
                         <td>499.000₫</td>
-                        <td>Áo sơ mi </td>
+                        <td>Xanh </td>
+    
+                       
                         <td>S</td>
                         <td><img src="./images/anh2.png" alt="Product Image"></td>
                         <td>
                             <a href="./sanpham1.html" class="edit-button"><i class="fas fa-edit"></i> Sửa</a>
-                            <a href="#" class="delete-button"><i class="fas fa-trash-alt"></i> Xóa</a>
+                            <!-- <a href="#" class="delete-button"><i class="fas fa-trash-alt" ></i> Xóa</a> -->
+
+                            <a href="#" type="button" class="delete-button" onclick="alert('Bạn có muốn xóa sản phẩm này không?')" style="font-size: 15px;"><i class="fas fa-trash-alt"></i> Xóa</a>
+                           
                         </td>
                     </tr>
 
                     <!-- San pham 2  -->
                     <tr>
                         <td>Áo Sơ mi dài tay Café-DriS</td>
+                        <td>599.000₫</td>
                         <td>499.000₫</td>
-                        <td>Áo sơ mi </td>
+                        <td>Xanh </td>
+                        
                         <td>S</td>
                         <td><img src="./images/anh2.png" alt="Product Image"></td>
                         <td>
                             <a href="./sanpham1.html" class="edit-button"><i class="fas fa-edit"></i> Sửa</a>
-                            <a href="#" class="delete-button"><i class="fas fa-trash-alt"></i> Xóa</a>
+                            <!-- <a href="#" class="delete-button"><i class="fas fa-trash-alt"></i> Xóa</a> -->
+                            <a href="#" type="button" class="delete-button" onclick="alert('Bạn có muốn xóa sản phẩm này không?')" style="font-size: 15px;"><i class="fas fa-trash-alt"></i> Xóa</a>
                         </td>
                     </tr>
                     <!-- San pham 3  -->
                     <tr>
                         <td>Áo Sơ mi dài tay Café-DriS</td>
+                        <td>599.000₫</td>
                         <td>499.000₫</td>
-                        <td>Áo sơ mi</td>
+                        <td>Xanh</td>
+                       
                         <td>S</td>
                         <td><img src="./images/anh2.png" alt="Product Image"></td>
                         <td>
                             <a href="./sanpham1.html" class="edit-button"><i class="fas fa-edit"></i> Sửa</a>
-                            <a href="#" class="delete-button"><i class="fas fa-trash-alt"></i> Xóa</a>
+                            <!-- <a href="#" class="delete-button"><i class="fas fa-trash-alt"></i> Xóa</a> -->
+                            <a href="#" type="button" class="delete-button" onclick="alert('Bạn có muốn xóa sản phẩm này không?')" style="font-size: 15px;"><i class="fas fa-trash-alt"></i> Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Áo Sơ mi dài tay Café-DriS</td>
+                        <td>599.000₫</td>
+                        <td>499.000₫</td>
+                        <td>Xanh</td>
+                       
+                        <td>S</td>
+                        <td><img src="./images/anh2.png" alt="Product Image"></td>
+                        <td>
+                            <a href="./sanpham1.html" class="edit-button"><i class="fas fa-edit"></i> Sửa</a>
+                            <!-- <a href="#" class="delete-button"><i class="fas fa-trash-alt"></i> Xóa</a> -->
+                            <a href="#" type="button" class="delete-button" onclick="alert('Bạn có muốn xóa sản phẩm này không?')" style="font-size: 15px;"><i class="fas fa-trash-alt"></i> Xóa</a>
                         </td>
                     </tr>
                     <!-- San pham 4  -->
@@ -127,37 +169,6 @@
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">&raquo;</a> <!-- Mũi tên phải -->
-        </div>
-        <!--Thêm sản phẩm-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=0 initial-scale=1.0">
-        <div class=" product-form">
-            <h2>Thêm Sản Phẩm</h2>
-            <form>
-                <label for="product-code">Mã sản phẩm:</label>
-                <input type="text" id="product-code" required>
-
-                <label for="product-name">Tên sản phẩm:</label>
-                <input type="text" id="product-name" required>
-
-                <label for="product-price">Giá:</label>
-                <input type="number" id="product-price" required>
-
-                <label for="product-description">Mô tả:</label>
-                <input id="product-description" required>
-
-                <label for="product-quantity">Số lượng:</label>
-                <input type="number" id="product-quantity" required>
-
-                </select>
-
-                <label for="product-image">Hình ảnh sản phẩm:</label>
-                <input type="file" id="product-image" accept="image/*" required>
-
-                <a href="#">
-                    <button type="button">Thêm Sản Phẩm</button>
-                </a>
-            </form>
         </div>
     </div>
 </body>

@@ -11,22 +11,24 @@
 <body>
     <div class="container">
         <h1>Chỉnh sửa thông tin khách hàng</h1>
-        <form action="#" method="POST" class="customer-form">
+        <form action="#"  class="customer-form">
             <!-- Tên khách hàng -->
             <label for="customer-name">Tên khách hàng</label>
-            <input type="text" id="customer-name" name="customer-name" value="Nguyễn Văn A" required>
+            <input type="text" id="customer-name" name="customer-name" value="Nguyễn Văn A" >
 
-            <!-- Email khách hàng -->
-            <label for="customer-email">Email</label>
-            <input type="email" id="customer-email" name="customer-email" value="nguyen.a@example.com" required>
+        
 
             <!-- Số điện thoại -->
             <label for="customer-phone">Số điện thoại</label>
-            <input type="tel" id="customer-phone" name="customer-phone" value="0987654321" required>
+            <input type="tel" id="customer-phone" name="customer-phone" value="0987654321" >
 
-            <!-- Địa chỉ -->
-            <label for="customer-address">Địa chỉ</label>
-            <input id="customer-address" name="customer-address" rows="4" value= "123 Đường ABC, Quận 1, TP.HCM" required>
+        
+                <label for="customer-address">Địa chỉ</label>
+                <textarea id="customer-address" name="customer-address" rows="4" 
+                    >123 Đường ABC, Quận 1, TP.HCM</textarea>
+            
+         
+            
 
             <!-- Giới tính -->
             <label for="customer-gender">Giới tính</label>
@@ -38,7 +40,7 @@
 
             <!-- Ngày sinh -->
             <label for="customer-dob">Ngày sinh</label>
-            <input type="date" id="customer-dob" name="customer-dob" value="1990-05-15" required>
+            <input type="date" id="customer-dob" name="customer-dob" value="1990-05-15" >
 
             <label for="customer-status">Trạng thái:</label>
             <select id="customer-status">

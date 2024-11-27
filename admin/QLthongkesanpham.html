@@ -23,15 +23,24 @@
     <aside class="sidebar">
         <div class="logo">
             <img src="./logo.jpg" alt="Logo">
-            <a href="#"><i class="fa fa-fw fa-user"></i>Nguyễn Văn B</a>
+            <a href="#" style="text-decoration: none; color: #000;"><i class="fa fa-fw fa-user"></i>Nguyễn Văn B</a>
         </div>
         </div>
         <nav>
             <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Tổng quan</a></li>
                 <li><a href="QLsanpham.html"><i class="fas fa-shirt"></i> Sản phẩm</a></li>
                 <li><a href="QLkhachhang.html"><i class="fas fa-users"></i> Khách hàng</a></li>
                 <li><a href="QLdonhang.html"><i class="fas fa-shopping-cart"></i> Đơn hàng</a></li>
-                <li><a href="QLthongke.html"><i class="fas fa-chart-line"></i> Thống kê</a></li>
+                <li class="statistics">
+                    <a >
+                        <i class="fa fa-chart-line"></i> Thống kê <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="QLthongkesanpham.html">Lượng sản phẩm</a></li>
+                        <li><a href="QLthongkekhachhang.html">Khách hàng</a></li>
+                    </ul>
+                </li>
                 <div class="sidebar-group">
                     <!-- <li class="sidebar-02"><a href=""><i class="fas fa-arrow-alt-circle-left"></i> Trang
                             chủ</a></li> -->
@@ -44,7 +53,7 @@
     <!-- Main Content -->
     <div class="main-content">
         <header>
-            <h1>QUẢN LÍ THỐNG KÊ <span class="main-content-title"></span></h1>
+            <h1>THỐNG KÊ SẢN PHẨM<span class="main-content-title"></span></h1>
         </header>
 
         <!-- Statistics Section -->
@@ -56,7 +65,7 @@
                 <input type="date" id="start-date">
                 <label for="end-date">Đến ngày:</label>
                 <input type="date" id="end-date">
-                <a href ="#"><button type="button">Thống kê</button></a>
+                <a href="#"><button type="button">Thống kê</button></a>
             </div>
 
             <div class="item-sales-statistics">
@@ -64,54 +73,68 @@
                 <table>
                     <thead>
                         <tr>
+                            <th>Tên mặt hàng</th>
                             <th>Mặt hàng</th>
                             <th>Số lượng bán ra</th>
                             <th>Tổng tiền thu được</th>
-                            <th>Mô tả</th>
-                            <th>Xem hóa đơn</th>
+                            <th>Xem doanh thu</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td>Áo Sơ mi dài tay Café-DriS</td>
                             <td>
                                 <img src="./images/anh2.png" alt="Product Image" class="item-image">
-                             
+
                             </td>
-                            
+
                             <td>140</td>
                             <td>7.000.000₫</td>
-                            <td></td>
-                            <td><a href="./hoadon1.html">Xem</a></td>
+                            <td><a href="tonghoadon.html" style="color: #551A8B;">Xem</a></td>
                         </tr>
                         <tr>
+                            <td>Áo thun nam sọc ngang</td>
                             <td>
                                 <img src="./images/Anh2.webp" alt="Product Image" class="item-image">
 
                             </td>
                             <td>50</td>
                             <td>4.500.000₫</td>
-                            <td></td>
-                            <td><a href="./hoadon1.html">Xem</a></td>
+
+                            <td><a href="tonghoadon.html" style="color: #551A8B;">Xem</a></td>
                         </tr>
                         <tr>
+                            <td>Áo thun nam vải Polyester</td>
                             <td>
                                 <img src="./images/Anh4.webp" alt="Product Image" class="item-image">
 
                             </td>
                             <td>30</td>
                             <td>3.500.000₫</td>
-                            <td></td>
-                            <td><a href="./hoadon1.html">Xem</a></td>
+
+                            <td><a href="tonghoadon.html" style="color: #551A8B;">Xem</a></td>
                         </tr>
                         <tr>
+                            <td>Áo thun nam cotton phối màu</td>
                             <td>
-                                <img src="./images/Anh8.jpg" alt="Product Image" class="item-image">
+                                <img src="./images/Anh9.webp" alt="Product Image" class="item-image">
 
                             </td>
                             <td>19</td>
                             <td>1.797.000₫</td>
-                            <td></td>
-                            <td><a href="./hoadon1.html">Xem</a></td>
+
+                            <td><a href="tonghoadon.html" style="color: #551A8B;">Xem</a></td>
+                        </tr>
+                        <tr>
+                            <td>Quần SNP AIR Tasran Woven (Semi-Wide) PT12</td>
+                            <td>
+                                <img src="./images/Anh1.jpg" alt="Product Image" class="item-image">
+
+                            </td>
+                            <td>19</td>
+                            <td>1.797.000₫</td>
+
+                            <td><a href="tonghoadon.html" style="color: #551A8B;">Xem</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -126,59 +149,51 @@
                 <a href="#">&raquo;</a> <!-- Mũi tên phải -->
             </div>
 
-
-            <div class="customer-revenue-statistics" style="padding-top: 15px;">
-                <h3>Khách hàng phát sinh doanh thu nhiều nhất trong khoảng thời gian trên</h3>
+            <!-- Best-Selling Products Section -->
+            <div class="best-selling">
+                <h4>Sản phẩm bán chạy nhất</h4>
                 <table>
                     <thead>
                         <tr>
-                            <th>Khách hàng</th>
-                            <th>Tổng doanh thu</th>
-                            <th>Mô tả</th>
-                            <th>Xem hóa đơn</th>
+                            <th>Tên mặt hàng</th>
+                            <th>Mặt hàng</th>
+                            <th>Số lượng bán ra</th>
+                            <th>Tổng tiền thu được</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Nguyễn Văn A</td>
-                            <td>20,000,000₫</td>
-                            <td>Khách hàng thân thiết, thường xuyên mua hàng.</td>
-                            <td><a href="./hoadon1.html">Xem</a></td>
-                        </tr>
-                        <tr>
-                            <td>Trần Thị B</td>
-                            <td>18,000,000₫</td>
-                            <td>Khách hàng thân thiết, thường xuyên mua hàng.</td>
-                            <td><a href="./hoadon1.html">Xem</a></td>
-                        </tr>
-                        <tr>
-                            <td>Phạm Văn C</td>
-                            <td>15,500,000₫</td>
-                            <td>Khách hàng thân thiết, thường xuyên mua hàng.</td>
-                            <td><a href="./hoadon1.html">Xem</a></td>
-                        </tr>
-                        <tr>
-                            <td>Nguyễn Thị D</td>
-                            <td>13,000,000₫</td>
-                            <td>Khách hàng thân thiết, thường xuyên mua hàng.</td>
-                            <td><a href="./hoadon1.html">Xem</a></td>
-                        </tr>
-                        <tr>
-                            <td>Đỗ Văn Q</td>
-                            <td>12,574,000₫</td>
-                            <td>Khách hàng thân thiết, thường xuyên mua hàng.</td>
-                            <td><a href="./hoadon1.html">Xem</a></td>
+                            <td>Áo Sơ mi dài tay Café-DriS</td>
+                            <td><img src="./images/anh2.png" alt="Product Image" class="item-image"></td>
+                            <td>400</td>
+                            <td>199.600.000₫</td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="customer-summary">
-                    <p><strong>Ghi chú:</strong> Danh sách này chỉ hiển thị 5 khách hàng có doanh thu cao nhất trong
-                        khoảng thời gian trên.</p>
-                </div>
             </div>
-        </section>
 
-
+            <!-- Worst-Selling Products Section -->
+            <div class="worst-selling">
+                <h4>Sản phẩm bán ít nhất</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tên mặt hàng</th>
+                            <th>Mặt hàng</th>
+                            <th>Số lượng bán ra</th>
+                            <th>Tổng tiền thu được</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Áo sơ mi dài tay kaki suông</td>
+                            <td><img src="./images/Anh7.webp" alt="Product Image" class="item-image"></td>
+                            <td>5</td>
+                            <td>2.495.000₫</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
     </div>
 </body>
 
