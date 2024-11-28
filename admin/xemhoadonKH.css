@@ -1,0 +1,159 @@
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin-top: 120px;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #070907;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* Tìm kiếm */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 50%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+  border-color: #010201;
+}
+
+/* Bảng hóa đơn */
+.bill-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.bill-table th,
+.bill-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.bill-table th {
+  background-color: #060706;
+  color: white;
+  cursor: pointer;
+}
+
+.bill-table td {
+  background-color: #f9f9f9;
+  font-size: 1rem;
+}
+
+.bill-table tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+.bill-table td.paid {
+  color: green;
+  font-weight: bold;
+}
+
+.bill-table td.unpaid {
+  color: red;
+  font-weight: bold;
+}
+
+/* Mũi tên sắp xếp */
+.sort-arrow {
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  #searchInput {
+    width: 70%;
+  }
+
+  .bill-table table {
+    font-size: 0.9rem;
+  }
+}
+/* Cột "Xem Chi Tiết" */
+.view-detail {
+  color: #034994;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.view-detail:hover {
+  background-color: #f0f8ff;
+}
+
+/* Các kiểu khác trong bảng */
+.bill-table td,
+.bill-table th {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.bill-table th {
+  background-color: #0e100e;
+  color: white;
+  cursor: pointer;
+}
+
+.bill-table td {
+  background-color: #f9f9f9;
+}
+
+.bill-table tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}

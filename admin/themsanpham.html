@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Sản Phẩm</title>
+    <link rel="stylesheet" href="themsappham.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Thêm Sản Phẩm Mới</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="#"   class="product-form">
+            <div class="form-group">
+                <label for="product-name">Tên sản phẩm</label>
+                <input type="text" id="product-name" name="product-name"  placeholder="Nhập tên sản phẩm">
+            </div>
+
+            <div class="form-group">
+                <label for="product-description">Mô tả sản phẩm</label>
+                <textarea id="product-description" name="product-description" rows="4" 
+                    placeholder="Nhập mô tả sản phẩm"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="old-price">Giá cũ</label>
+                <input type="number" id="old-price" name="old-price" placeholder="Nhập giá cũ">
+            </div>
+
+            <div class="form-group">
+                <label for="new-price">Giá mới</label>
+                <input type="number" id="new-price" name="new-price"  placeholder="Nhập giá mới">
+            </div>
+            <div class="form-group">
+                <label for="new-price">Màu sắc</label>
+                <input type="number" id="new-price" name="new-price"  placeholder="Nhập màu">
+            </div>
+
+            <div class="form-group">
+                <label for="product-size">Kích cỡ   </label>
+                <select id="product-size" name="product-size" >
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <!-- <option value="XXL">XXL</option> -->
+                </select>
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="product-category">Danh mục</label>
+                <select id="product-category" name="product-category" required>
+                    <option value="Áo">Áo thun</option>
+                    <option value="Quần">Áo sơ mi</option>
+                    <option value="Áo khoác">Quần tây</option>
+                </select>
+            </div> -->
+
+            <div class="form-group">
+                <label for="product-image">Hình ảnh sản phẩm</label>
+                <input type="file" id="product-image" name="product-image" accept="image/*" >
+            </div>
+
+            <button type="submit" class="submit-btn" onclick="orderSuccess()">Thêm sản phẩm</button>
+            <script>
+                function orderSuccess() {
+                    alert("Thêm thành công!");
+                }
+            </script>
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clothing Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

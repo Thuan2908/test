@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa thông tin sản phẩm</title>
+    <link rel="stylesheet" href="sanpham1.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1>Chỉnh sửa thông tin sản phẩm quần áo</h1>
+            <action="#"  class="product-form">
+                <label for="product-name">Tên sản phẩm</label>
+                <input type="text" id="product-name" name="product-name" value="Áo Sơ mi dài tay Café-DriS" required>
+
+                <label for="product-price">Giá cũ</label>
+                <input type="text,number" id="product-price" name="product-price" value="599.000₫" required>
+
+                <label for="product-price">Giá mới</label>
+                <input type="text,number" id="product-price" name="product-price" value="499.000₫" required>
+
+                <label for="product-price">Màu sắc</label>
+                <input type="text,number" id="product-price" name="product-price" value="Xanh" required>
+                <!-- <label for="product-category">Danh mục</label>
+                <select id="product-category" name="product-category">
+                    <option value="men-t-shirt" selected>Áo sơ mi</option>
+                    <option value="women-dress">Quần tây</option>
+                    <option value="men-jeans">Áo thun</option>
+                </select> -->
+
+                <label for="product-size">Kích cỡ</label>
+                <select id="product-size" name="product-size">
+                    <option value="S" selected>S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <!-- <option value="XXL">XXL</option> -->
+                </select>
+
+                <h2>Ảnh 1</h2>
+                <h1><img src="./images/anh1.png" width="25%"></h1>
+                <div class="pagination">
+                    <a href="#">Sửa</a>
+                    <a href="#">Xóa</a>
+                </div>
+                <h2>Ảnh 2</h2>
+                <h1><img src="./images/anh2.png" width="25%"></h1>
+                <div class="pagination">
+                    <a href="#">Sửa</a>
+                    <a href="#">Xóa</a>
+                </div>
+                <h2>Ảnh 3</h2>
+                <h1><img src="./images/anh3.png" width="25%"></h1>
+                <div class="pagination">
+                    <a href="#">Sửa</a>
+                    <a href="#">Xóa</a>
+                </div>
+
+                <a href="./QLsanpham.html">Cập nhật thông tin</a>
+        </form>
+
+    </div>
+</body>
+
+</html>

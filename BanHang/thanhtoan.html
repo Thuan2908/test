@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THANH TOÁN</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-lg-2">
+                    <div>
+                        <a href="./index2.html"><img src="img/logo.jpg"  style=" width: 40%; height: 40%; margin-left: 100px; margin-top: 10px;"></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7">
+                    <nav class="header__menu">
+                        <ul>
+                            <li ><a href="./index2.html">Trang chủ</a></li>
+                            <li><a href="./aosomi.html">ÁO SƠ MI</a></li>
+                            <li><a href="./quantay.html">QUẦN TÂY</a></li>
+                            <li><a href="./aothun.html">ÁO THUN</a></li>
+                            <!-- <li><a href="./shop-cart.html">Giỏ hàng</a></li>
+                            <li><a href="./checkout.html">Checkout</a></li> -->
+                            <!-- <li><a href="./index2.html">Liên hệ</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__right">
+                        <!-- <div class="header__right__auth">
+                            <a><b style="color: black;">LÊ VĂN A</b></a>
+                    
+                        </div> -->
+                        <div class="header__right__auth">
+                            <a href="#" class="auth-name" onclick="toggleDropdown(event)">LÊ VĂN A</a>
+                            <div class="dropdown" id="userDropdown">
+                                <a href="./lichsumuahang.html">Lịch sử mua hàng</a>
+                            </div>
+                        </div>
+                        
+                      
+                        <ul class="header__right__widget">
+                            <li><span class="icon_search search-switch"></span></li>
+                            
+                            <!-- <li><a href="./aosomi.html"><span class="icon_heart_alt"></span>
+                                <div class="tip">2</div>
+                            </a></li> -->
+                            
+                            <li><a href="./giohang.html"><span class="icon_bag_alt"></span>
+                                <div class="tip">3</div>
+                            </a></li>
+                            <div class="header__right__auth">
+                           
+                                <a href="./index.html"><b style="color: rgb(214, 51, 51);">Đăng xuất</b></a>
+                            </div>
+                        </ul>
+                       
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="./index2.html"><i class="fa fa-home"></i>TRANG CHỦ</a>
+                        <span>THANH TOÁN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Checkout Section Begin -->
+    <section class="checkout spad">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-lg-12">
+                    <h6 class="coupon__link"><span class="icon_tag_alt"></span> <a href="#">Have a coupon?</a> Click
+                    here to enter your code.</h6>
+                </div> -->
+            </div>
+            <form action="#" class="checkout__form">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h5>Chi tiết thanh toán</h5>
+                        <div class="row">
+                            <!-- <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="checkout__form__input">
+                                    <p>Tên <span>*</span></p>
+                                    <input type="text"  placeholder="A ">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="checkout__form__input">
+                                    <p>Họ <span>*</span></p>
+                                    <input type="text"  placeholder="Lê Văn ">
+                                </div>
+                            </div> -->
+                            <div class="col-lg-12">
+                                <div class="checkout__form__input">
+                                    <p>Họ và Tên <span>*</span></p>
+                                    <input type="text" placeholder="Lê Văn A">
+                                    <!-- <input type="text" placeholder="Apartment. suite, unite ect ( optinal )"> -->
+                                </div>
+                                
+                                <div class="checkout__form__input">
+                                    <p>Địa chỉ <span>*</span></p>
+                                    <input type="text" placeholder="273 Đ. An Dương Vương, Phường 3, Quận 5">
+                                    <!-- <input type="text" placeholder="Apartment. suite, unite ect ( optinal )"> -->
+                                </div>
+                                <div class="checkout__form__input">
+                                    <p>Thành phố <span>*</span></p>
+                                    <input type="text" placeholder="TP.Hồ Chí Minh ">
+                                </div>
+                                <!-- <div class="checkout__form__input">
+                                    <p>Country/State <span>*</span></p>
+                                    <input type="text">
+                                </div>
+                                <div class="checkout__form__input">
+                                    <p>Postcode/Zip <span>*</span></p>
+                                    <input type="text">
+                                </div> -->
+                                <!-- <div class="checkout__form__input">
+                                    <p>Ngân hàng (nếu dùng phương thức chuyển khoản) <span>*</span></p>
+                                    <input type="text" placeholder="ACB ">
+                                </div>
+                                <div class="checkout__form__input">
+                                    <p>Tên tài khoản (nếu dùng phương thức chuyển khoản) <span>*</span></p>
+                                    <input type="text" placeholder="LeA ">
+                                </div> -->
+                                <div class="checkout__form__input">
+                                    <p>Số điện thoại <span>*</span></p>
+                                    <input type="text" placeholder="0355529999">
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="checkout__form__input">
+                                    <p>Số Điện Thoại <span>*</span></p>
+                                    <input type="text" placeholder="035 552 9999 ">
+                                </div>
+                            </div> -->
+                            <!-- <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="checkout__form__input">
+                                    <p>Email <span>*</span></p>
+                                    <input type="text" >
+                                </div>
+                            </div> -->
+                            <div class="col-lg-12">
+                                <!-- <div class="checkout__form__checkbox">
+                                    <label for="acc">
+                                        Create an acount?
+                                        <input type="checkbox" id="acc">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <p>Create am acount by entering the information below. If you are a returing
+                                        customer login at the <br />top of the page</p>
+                                    </div>
+                                    <div class="checkout__form__input">
+                                        <p>Account Password <span>*</span></p>
+                                        <input type="text">
+                                    </div> -->
+                                    <!-- <div class="checkout__form__checkbox">
+                                        <label for="note">
+                                            Note about your order, e.g, special noe for delivery
+                                            <input type="checkbox" id="note">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                    <div class="checkout__form__input">
+                                        <p>Ghi chú khác <span>*</span></p>
+                                        <input type="text"
+                                        placeholder="Lưu ý về đơn đặt hàng của bạn, ví dụ: thông báo đặc biệt về giao hàng">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--phương thức thanh toán-->
+                            <style>
+                                /* body {
+                                font-family: Arial, sans-serif;
+                                margin: 20px;
+                                } */
+                                .payment-method {
+                                    margin-bottom: 20px;
+                                }
+                                .form-section {
+                                display: none;
+                                margin-top: 20px;
+                                }
+
+                                .form-section.active {
+                                display: block;
+                                }
+
+                                .payment-input {
+                                width: 100%;
+                                padding: 10px;
+                                margin: 10px 0;
+                                 border: 1px solid #ccc;
+                                border-radius: 4px;
+                                 }
+
+                                /* button {
+                                background-color: #28a745;
+                                color: white;
+                                padding: 10px 20px;
+                               border: none;
+                               border-radius: 4px;
+                               cursor: pointer;
+                                  } */
+
+                                button:hover {
+                                background-color: #218838;
+                                 }
+
+                                .h4 {
+                                color: #444444;
+                                font-weight: 500;
+                                margin-bottom: 10px;
+                                }
+                                
+                            </style>
+                            
+                            <div class="h4">
+                                <h4>Chọn Phương Thức Thanh Toán</h4>
+                            </div>
+                        
+                            <div class="payment-method">
+                                <label>
+                                    <input type="radio" name="payment" value="cash" onclick="showForm('cash-form')"> Tiền mặt
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" name="payment" value="transfer" onclick="showForm('transfer-form')"> Chuyển khoản
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" name="payment" value="card" onclick="showForm('card-form')"> Thẻ
+                                </label>
+                            </div>
+                        
+                            <div id="cash-form" class="form-section">
+                                <h2>Thanh toán tiền mặt</h2>
+                                <p>Bạn sẽ thanh toán khi nhận hàng.</p>
+                            </div>
+                        
+                            <div id="transfer-form" class="form-section">
+                                <h2>Thanh toán chuyển khoản</h2>
+                                <label for="bank-account">Số tài khoản ngân hàng:</label>
+                                <input type="text" id="bank-account" class="payment-input" placeholder="Nhập số tài khoản">
+                                
+                                <label for="amount">Số tiền:</label>
+                                <input type="text" id="amount" class="payment-input" placeholder="Nhập số tiền">
+                            </div>
+                        
+                            <div id="card-form" class="form-section">
+                                <h2>Thanh toán qua thẻ</h2>
+                                <label for="card-number">Số thẻ:</label>
+                                <input type="text" id="card-number" class="payment-input" placeholder="Nhập số thẻ">
+                                
+                                <label for="expiry-date">Ngày hết hạn:</label>
+                                <input type="text" id="expiry-date" class="payment-input" placeholder="MM/YY">
+                                
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" class="payment-input" placeholder="Nhập mã CVV">
+                            </div>
+                        
+                            <script>
+                                function showForm(formId) {
+                                    // Ẩn tất cả các form
+                                    document.querySelectorAll('.form-section').forEach(section => {
+                                        section.classList.remove('active');
+                                    });
+                                    // Hiển thị form tương ứng
+                                    document.getElementById(formId).classList.add('active');
+                                }
+                            </script>
+                              <!--phương thức thanh toán-->
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="checkout__order">
+                                <h5>Đơn hàng của bạn</h5>
+                                <div class="checkout__order__product">
+                                    <ul>
+                                        <li>
+                                            <span class="top__text">Sản phẩm</span>
+                                            <span class="top__text__right">Tổng cộng</span>
+                                        </li>
+                                        <li>01.Áo thun nam trơn Cotton<span> 499.000đ</span></li>
+                                        <li>02.Áo thun nam vải Rayon<span> 399.000đ</span></li>
+                                        <li>03.Quần Tây TaKoCa Modernize <br>(Slim Fit)<span> 499.000đ</span></li>
+                                        <!-- <li>04.Cotton shirt <span>$ 110.0</span></li> -->
+                                    </ul>
+                                </div>
+                                <div class="checkout__order__total">
+                                    <ul>
+                                        <!-- <li>Subtotal<span>640.000đ</span></li> -->
+                                        <li>Tổng cộng <span>1.397.000đ</span></li>
+                                    </ul>
+                                </div>
+                                <div class="checkout__order__widget">
+                                    <!-- <label for="o-acc">
+                                        Kiểm tra thanh toán
+                                        <input type="checkbox" id="o-acc">
+                                        <span class="checkmark"></span>
+                                    </label> -->
+                                    <!-- <p>Create am acount by entering the information below. If you are a returing customer
+                                    login at the top of the page.</p> -->
+                                    <!-- <label for="check-payment">
+                                        Chuyển khoản
+                                        <input type="checkbox" id="check-payment">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label for="paypal">
+                                        Tiền mặt
+                                        <input type="checkbox" id="paypal">
+                                        <span class="checkmark"></span>
+                                    </label> -->
+                                </div>
+                                
+                                <div>
+                                    <button type="button" class="site-btn" onclick="alert('Đặt hàng thành công. Xin cảm ơn quý khách!')">Đặt hàng</button>
+                                </div>
+                                
+                                <!-- <script>
+                                    function orderSuccess() {
+                                        alert("Đặt hàng thành công. Cảm ơn quý khách!");
+                                    }
+                                </script> -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Checkout Section End -->
+
+        <!-- Instagram Begin -->
+        <!-- <div class="instagram">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-1.jpg">
+                            <div class="instagram__text">
+                                <i class="fa fa-instagram"></i>
+                                <a href="#">@ ashion_shop</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-2.jpg">
+                            <div class="instagram__text">
+                                <i class="fa fa-instagram"></i>
+                                <a href="#">@ ashion_shop</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-3.jpg">
+                            <div class="instagram__text">
+                                <i class="fa fa-instagram"></i>
+                                <a href="#">@ ashion_shop</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-4.jpg">
+                            <div class="instagram__text">
+                                <i class="fa fa-instagram"></i>
+                                <a href="#">@ ashion_shop</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-5.jpg">
+                            <div class="instagram__text">
+                                <i class="fa fa-instagram"></i>
+                                <a href="#">@ ashion_shop</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-6.jpg">
+                            <div class="instagram__text">
+                                <i class="fa fa-instagram"></i>
+                                <a href="#">@ ashion_shop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <hr style="border: 3px double black; opacity: 0.2; width: 100%;">
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-7">
+                        <div class="footer__about">
+                            <div class="footer__logo">
+                                <a href="./index2.html"><img src="img/logo.jpg" alt=""></a>
+                            </div>
+                            <p><b>Trang web bán quần áo nam chuyên cung cấp các mẫu thời trang công sở, đa dạng. Sản phẩm đảm bảo chất lượng cao, với nhiều sự lựa chọn về kiểu dáng và kích cỡ.</b></p>
+                            <div class="footer__payment">
+                                <img src="img/payment/payment-1.png" >
+                                <img src="img/payment/payment-2.png" >
+                                <img src="img/payment/payment-3.png" >
+                                <img src="img/payment/payment-4.png">
+                                <img src="img/payment/payment-5.png" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-5">
+                        <div class="footer__widget">
+                            <h6>ĐỊA CHỈ</h6>
+                            <ul>
+                                <li>273 Đ. An Dương Vương - Phường 3 - Quận 5 - TP.Hồ Chí Minh - Việt Nam</li>
+                                <!-- <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">FAQ</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="footer__widget">
+                            <h6>LIÊN HỆ</h6>
+                            <ul>
+                                <li>SĐT: 035 552 9999</li>
+                                <li>SĐT: 098 373 9898</li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8 col-sm-8">
+                        <div class="footer__newslatter">
+                            <div class="footer__social">
+                                <h6>Theo dõi chúng tôi tại</h6>
+                                <a target="_blank"><i class="fa fa-facebook"></i></a>                        
+                                <a  target="_blank"><i class="fa fa-youtube-play"></i></a>
+                                <a  target="_blank" ><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <!-- <div class="footer__copyright__text">
+                            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                        </div> -->
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+
+        <!-- Search Begin -->
+        <div class="search-model">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+                <div class="search-close-switch" onclick="closeSearch()">+</div>
+                <form class="search-model-form" onsubmit="return searchRedirect(event)">
+                    <input type="text" id="search-input" placeholder="Tìm kiếm" onkeydown="handleKeyDown(event)">
+                    <a href="./ketquatimkiem.html"> <span class="icon_search search-switch search-btn" onclick="document.querySelector('.search-model-form').submit();"></span></a>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            // Hàm xử lý khi người dùng nhấn Enter
+            function handleKeyDown(event) {
+                if (event.key === "Enter") {
+                    searchRedirect(event); // Gọi hàm searchRedirect khi nhấn Enter
+                }
+            }
+        
+            // Hàm thực hiện chuyển hướng khi nhấn Enter hoặc submit form
+            function searchRedirect(event) {
+                const input = document.getElementById("search-input").value.trim();
+                if (input !== "") {
+                    window.location.href = "ketquatimkiem.html?q=" + encodeURIComponent(input);
+                }
+                event.preventDefault(); // Ngừng hành động mặc định của form (nếu có)
+            }
+        
+            // Hàm đóng search modal
+            function closeSearch() {
+                document.querySelector('.search-model').style.display = 'none';
+            }
+        </script>
+        
+        <!-- Js Plugins -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    
+    
+
+    </html>

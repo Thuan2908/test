@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem Tất Cả Hóa Đơn</title>
+    <link rel="stylesheet" href="xemhoadonKH.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Xem Tất Cả Hóa Đơn Của Khách Hàng A</h1>
+            <p class="description">Danh sách các hóa đơn của khách hàng với đầy đủ thông tin chi tiết.</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Tìm hóa đơn theo mã đơn hàng..."
+                onkeyup="searchBill()">
+        </div>
+
+        <div class="bill-table">
+            <table id="billTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Mã Hóa Đơn <span class="sort-arrow"></span></th>
+                        <th onclick="sortTable(1)">Ngày <span class="sort-arrow"></span></th>
+                        <th onclick="sortTable(2)">Số Tiền <span class="sort-arrow"></span></th>
+                        <th onclick="sortTable(3)">Trạng Thái <span class="sort-arrow"></span></th>
+                        <!-- ↑↓ -->
+                        <th>Xem Chi Tiết</th> <!-- Cột Xem Chi Tiết -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>01/11/2024</td>
+                        <td>1.497.000đ</td>
+                        <td class="paid">Đã thanh toán</td>
+                        <td><a href="bill.html" class="view-detail">Xem</a></td>
+                        <!-- Liên kết chi tiết -->
+                    </tr>
+                    <tr>
+                        <td>#015</td>
+                        <td>05/11/2024</td>
+                        <td>500.000đ</td>
+                        <td class="unpaid">Chưa thanh toán</td>
+                        <td><a href="bill.html" class="view-detail">Xem</a></td>
+                        <!-- Liên kết chi tiết -->
+                    </tr>
+                    <tr>
+                        <td>#099</td>
+                        <td>10/11/2024</td>
+                        <td>750.000đ</td>
+                        <td class="paid">Đã thanh toán</td>
+                        <td><a href="bill.html" class="view-detail">Xem</a></td>
+                        <!-- Liên kết chi tiết -->
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>15/11/2024</td>
+                        <td>1.277.000đ</td>
+                        <td class="unpaid">Chưa thanh toán</td>
+                        <td><a href="bill.html" class="view-detail">Xem</a></td>
+                        <!-- Liên kết chi tiết -->
+                    </tr>
+                    <tr>
+                        <td>#017</td>
+                        <td>20/11/2024</td>
+                        <td>650.000đ</td>
+                        <td class="paid">Đã thanh toán</td>
+                        <td><a href="bill.html" class="view-detail">Xem</a></td>
+                        <!-- Liên kết chi tiết -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

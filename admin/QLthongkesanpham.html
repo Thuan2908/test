@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Quản lý thống kê</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="./logo.jpg" alt="Logo">
+            <a href="#" style="text-decoration: none; color: #000;"><i class="fa fa-fw fa-user"></i>Nguyễn Văn B</a>
+        </div>
+        </div>
+        <nav>
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Tổng quan</a></li>
+                <li><a href="QLsanpham.html"><i class="fas fa-shirt"></i> Sản phẩm</a></li>
+                <li><a href="QLkhachhang.html"><i class="fas fa-users"></i> Khách hàng</a></li>
+                <li><a href="QLdonhang.html"><i class="fas fa-shopping-cart"></i> Đơn hàng</a></li>
+                <li class="statistics">
+                    <a >
+                        <i class="fa fa-chart-line"></i> Thống kê <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="QLthongkesanpham.html">Lượng sản phẩm</a></li>
+                        <li><a href="QLthongkekhachhang.html">Khách hàng</a></li>
+                    </ul>
+                </li>
+                <div class="sidebar-group">
+                    <!-- <li class="sidebar-02"><a href=""><i class="fas fa-arrow-alt-circle-left"></i> Trang
+                            chủ</a></li> -->
+                    <!-- <li class="sidebar-02"><a href="#"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li> -->
+                </div>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>THỐNG KÊ SẢN PHẨM<span class="main-content-title"></span></h1>
+        </header>
+
+        <!-- Statistics Section -->
+        <section class="statistics-section">
+            <h2>Thống kê tình hình kinh doanh</h2>
+
+            <div class="filter-statistics">
+                <label for="start-date">Từ ngày:</label>
+                <input type="date" id="start-date">
+                <label for="end-date">Đến ngày:</label>
+                <input type="date" id="end-date">
+                <a href="#"><button type="button">Thống kê</button></a>
+            </div>
+
+            <div class="item-sales-statistics">
+                <h3>Thống kê mặt hàng bán ra</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tên mặt hàng</th>
+                            <th>Mặt hàng</th>
+                            <th>Số lượng bán ra</th>
+                            <th>Tổng tiền thu được</th>
+                            <th>Xem doanh thu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Áo Sơ mi dài tay Café-DriS</td>
+                            <td>
+                                <img src="./images/anh2.png" alt="Product Image" class="item-image">
+
+                            </td>
+
+                            <td>140</td>
+                            <td>7.000.000₫</td>
+                            <td><a href="tonghoadon.html" style="color: #551A8B;">Xem</a></td>
+                        </tr>
+                        <tr>
+                            <td>Áo thun nam sọc ngang</td>
+                            <td>
+                                <img src="./images/Anh2.webp" alt="Product Image" class="item-image">
+
+                            </td>
+                            <td>50</td>
+                            <td>4.500.000₫</td>
+
+                            <td><a href="tonghoadon.html" style="color: #551A8B;">Xem</a></td>
+                        </tr>
+                        <tr>
+                            <td>Áo thun nam vải Polyester</td>
+                            <td>
+                                <img src="./images/Anh4.webp" alt="Product Image" class="item-image">
+
+                            </td>
+                            <td>30</td>
+                            <td>3.500.000₫</td>
+
+                            <td><a href="tonghoadon.html" style="color: #551A8B;">Xem</a></td>
+                        </tr>
+                        <tr>
+                            <td>Áo thun nam cotton phối màu</td>
+                            <td>
+                                <img src="./images/Anh9.webp" alt="Product Image" class="item-image">
+
+                            </td>
+                            <td>19</td>
+                            <td>1.797.000₫</td>
+
+                            <td><a href="tonghoadon.html" style="color: #551A8B;">Xem</a></td>
+                        </tr>
+                        <tr>
+                            <td>Quần SNP AIR Tasran Woven (Semi-Wide) PT12</td>
+                            <td>
+                                <img src="./images/Anh1.jpg" alt="Product Image" class="item-image">
+
+                            </td>
+                            <td>19</td>
+                            <td>1.797.000₫</td>
+
+                            <td><a href="tonghoadon.html" style="color: #551A8B;">Xem</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination">
+                <a href="#">&laquo;</a> <!-- Mũi tên trái -->
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">&raquo;</a> <!-- Mũi tên phải -->
+            </div>
+
+            <!-- Best-Selling Products Section -->
+            <div class="best-selling">
+                <h4>Sản phẩm bán chạy nhất</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tên mặt hàng</th>
+                            <th>Mặt hàng</th>
+                            <th>Số lượng bán ra</th>
+                            <th>Tổng tiền thu được</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Áo Sơ mi dài tay Café-DriS</td>
+                            <td><img src="./images/anh2.png" alt="Product Image" class="item-image"></td>
+                            <td>400</td>
+                            <td>199.600.000₫</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Worst-Selling Products Section -->
+            <div class="worst-selling">
+                <h4>Sản phẩm bán ít nhất</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tên mặt hàng</th>
+                            <th>Mặt hàng</th>
+                            <th>Số lượng bán ra</th>
+                            <th>Tổng tiền thu được</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Áo sơ mi dài tay kaki suông</td>
+                            <td><img src="./images/Anh7.webp" alt="Product Image" class="item-image"></td>
+                            <td>5</td>
+                            <td>2.495.000₫</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+</body>
+
+</html>

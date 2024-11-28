@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng Doanh Thu Của Sản Phẩm</title>
+    <link rel="stylesheet" href="tonghoadon.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Tổng doanh thu áo sơ mi dài tay Café-DriS</h1>
+            <p class="subtitle">Dưới đây là danh sách các hóa đơn bán được và tổng doanh thu từ sản phẩm.</p>
+        </header>
+        <section class="invoice-list">
+            <h2>Danh Sách Hóa Đơn</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã Hóa Đơn</th>
+                        <th>Số Lượng</th>
+                        <th>Giá Mỗi Sản Phẩm</th>
+                        <th>Doanh Thu</th>
+                        <th>Chi Tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="openModal(1)">
+                        <td>#001</td>
+                        <td>3</td>
+                        <td>499.000đ</td>
+                        <td>1.497.000đ</td>
+                        <td><a href="hoadon1.html">Xem</a></td>
+                    </tr>
+                    <tr onclick="openModal(2)">
+                        <td>#002</td>
+                        <td>8</td>
+                        <td>499.000đ</td>
+                        <td>3.992.000đ</td>
+                        <td><a href="hoadon1.html">Xem</a></td>
+                    </tr>
+                    <tr onclick="openModal(3)">
+                        <td>#003</td>
+                        <td>5</td>
+                        <td>499.000đ</td>
+                        <td>2.495.000đ</td>
+                        <td><a href="hoadon1.html">Xem</a></td>
+                    </tr>
+                    <tr onclick="openModal(4)">
+                        <td>#004</td>
+                        <td>7</td>
+                        <td>499.000đ</td>
+                        <td>3.493.000đ</td>
+                        <td><a href="hoadon1.html">Xem</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="total">
+            <h2>Tổng Doanh Thu: <span>11.477.000đ</span></h2>
+        </section>
+        <footer>
+            <p class="footer-text">Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!</p>
+        </footer>
+    </div>
+
+    <!-- Modal for showing details -->
+    <div id="invoiceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Chi Tiết Hóa Đơn</h2>
+            <div id="modalDetails">
+                <!-- Chi tiết sẽ được cập nhật từ JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
